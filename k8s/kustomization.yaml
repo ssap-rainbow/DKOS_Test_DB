@@ -1,7 +1,9 @@
-namespace: default
+namespace: krampoline
 resources:
   - mariadb.yaml
   - backend.yaml
+  - service.yaml
+  - ingress.yaml
 configMapGenerator:
   - name: init-db
     files:
